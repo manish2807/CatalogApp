@@ -9,8 +9,10 @@ class MyTheme {
           color: Colors.white,
           elevation: 0.0,
           iconTheme: IconThemeData(color: Colors.black),
-          textTheme: Theme.of(context).textTheme));
+          titleTextStyle: TextStyle(color: Colors.black, fontSize: 20)));
 
   static ThemeData darkTheme(BuildContext context) =>
       ThemeData(brightness: Brightness.dark);
 }
+
+//textTheme: Theme.of(context).textTheme))
