@@ -2,7 +2,7 @@ import 'package:catalog_app/pages/login.dart';
 import 'package:catalog_app/utils/routes.dart';
 import 'package:catalog_app/widgets/themes.dart';
 import 'package:flutter/material.dart';
-import 'package:catalog_app/pages/homepage.dart';
+import 'package:catalog_app/pages/Homepage.dart';
 
 void main() {
   runApp(MyApp());
