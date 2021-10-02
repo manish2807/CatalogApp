@@ -12,7 +12,9 @@ class HomeDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(),
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+        ),
         backgroundColor: MyTheme.creamColor,
         bottomNavigationBar: Container(
           color: Colors.white,
@@ -27,10 +29,10 @@ class HomeDetailPage extends StatelessWidget {
                           backgroundColor: MaterialStateProperty.all(
                               MyTheme.darkBluishColor),
                           shape: MaterialStateProperty.all(StadiumBorder())),
-                      child: "Buy".text.make())
-                  .wh(100, 50)
+                      child: "Add to cart".text.make())
+                  .wh(120, 50)
             ],
-          ).p32(),
+          ).p24(),
         ),
         body: SafeArea(
           bottom: false,
@@ -46,20 +48,27 @@ class HomeDetailPage extends StatelessWidget {
                   arcType: VxArcType.CONVEY,
                   edge: VxEdge.TOP,
                   child: Container(
-                      color: Colors.white,
-                      width: context.screenWidth,
-                      child: Column(
-                        children: [
-                          catalog.name.text.bold.xl4
-                              .color(MyTheme.darkBluishColor)
-                              .make(),
-                          Text(catalog.desc,
-                                  style: Theme.of(context).textTheme.caption)
-                              .text
-                              .make(),
-                          10.heightBox,
-                        ],
-                      ).py64()),
+                    color: Colors.white,
+                    width: context.screenWidth,
+                    child: Column(
+                      children: [
+                        catalog.name.text.bold.xl4
+                            .color(MyTheme.darkBluishColor)
+                            .make(),
+                        Text(catalog.desc,
+                                style: Theme.of(context).textTheme.caption)
+                            .text
+                            .xl
+                            .make(),
+                        10.heightBox,
+                        Text("Sit sed at consetetur erat dolore invidunt erat. Et no tempor amet rebum dolore diam, dolor no voluptua duo et ea lorem aliquyam takimata magna. Diam magna voluptua amet eirmod,.",
+                                style: Theme.of(context).textTheme.caption)
+                            .text
+                            .make()
+                            .p16()
+                      ],
+                    ).py32(),
+                  ),
                 ),
               ),
             ],
