@@ -35,7 +35,7 @@ class _LoginState extends State<Login> {
           child: Column(
             children: [
               SizedBox(
-                height: 40,
+                height: 100,
               ),
               Image.asset(
                 "assets/images/login.png",
@@ -43,14 +43,14 @@ class _LoginState extends State<Login> {
                 scale: 4,
               ),
               SizedBox(
-                height: 20,
+                height: 40,
               ),
               Text(
                 "Welcome $name",
                 style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
               ),
               SizedBox(
-                height: 40,
+                height: 70,
               ),
               Padding(
                 padding:
@@ -89,7 +89,7 @@ class _LoginState extends State<Login> {
                       },
                     ),
                     SizedBox(
-                      height: 40,
+                      height: 80,
                     ),
                     Material(
                         color: context.theme.colorScheme.onSecondary,
